@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1_Robledo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-3B-Y8H">
+                                <rect key="frame" x="192" y="60" width="216" height="46"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="RECHARGE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.73234766721725464" green="0.079754523932933807" blue="0.651542067527771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Didot-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="colorfulTree" translatesAutoresizingMaskIntoConstraints="NO" id="x5X-oL-gGq">
+                                <rect key="frame" x="200" y="121" width="200" height="200"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="100" y="71" width="200" height="536"/>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="lastBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HPf-3p-XOz">
+                                <rect key="frame" x="130" y="343" width="221" height="294"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Bi-6t-LIW">
+                                        <rect key="frame" x="1" y="0.0" width="56" height="32"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Breathe">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Didot"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="breatheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyK-qt-pRu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03u-cy-6nw">
+                                        <rect key="frame" x="67" y="0.0" width="40" height="32"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Relax">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Didot"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="16" y="42" width="40" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="relaxButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNP-Lq-oTW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjd-H1-8pa">
+                                        <rect key="frame" x="117" y="0.0" width="48" height="32"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Affirm">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Didot"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="84" width="48" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="affirmButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eii-eT-VOs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyJ-jq-8w6">
+                                        <rect key="frame" x="175" y="0.0" width="47" height="32"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Laugh">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Didot"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="126" width="47" height="32"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="laughButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gN-KQ-Ney"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="172" y="632" width="56" height="158"/>
+                                </variation>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Everyone needs to recharge!" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnn-HO-bGZ">
+                                <rect key="frame" x="198" y="321" width="205" height="20"/>
+                                <color key="backgroundColor" red="0.85637199878692627" green="0.95064514875411987" blue="0.78779083490371704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="98" y="607" width="205" height="20"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74473077058792114" green="0.93630319833755493" blue="0.93884176015853882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HPf-3p-XOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9D5-6N-cC4"/>
+                            <constraint firstItem="Rnn-HO-bGZ" firstAttribute="bottom" secondItem="HPf-3p-XOz" secondAttribute="top" constant="5" id="Fck-oX-zRu"/>
+                            <constraint firstItem="x5X-oL-gGq" firstAttribute="top" secondItem="AFN-3B-Y8H" secondAttribute="bottom" id="GPK-Kn-5e6"/>
+                            <constraint firstItem="AFN-3B-Y8H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="QIZ-Um-7Yc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPf-3p-XOz" secondAttribute="bottom" constant="20" id="SB9-I1-yB0"/>
+                            <constraint firstItem="AFN-3B-Y8H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YEQ-x5-v0L"/>
+                            <constraint firstItem="HPf-3p-XOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c3j-kh-v6M"/>
+                            <constraint firstItem="x5X-oL-gGq" firstAttribute="bottom" secondItem="Rnn-HO-bGZ" secondAttribute="top" priority="750" id="evM-6c-kv5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HPf-3p-XOz" secondAttribute="bottom" constant="10" id="iBT-gH-9I8"/>
+                            <constraint firstItem="HPf-3p-XOz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Rnn-HO-bGZ" secondAttribute="bottom" constant="5" id="iti-vz-QFB"/>
+                            <constraint firstItem="Rnn-HO-bGZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puH-e1-470"/>
+                            <constraint firstItem="x5X-oL-gGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="quz-ef-Vmv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="c3j-kh-v6M"/>
+                                <exclude reference="iti-vz-QFB"/>
+                                <exclude reference="iBT-gH-9I8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="9D5-6N-cC4"/>
+                                <include reference="c3j-kh-v6M"/>
+                                <include reference="iti-vz-QFB"/>
+                                <exclude reference="Fck-oX-zRu"/>
+                                <exclude reference="SB9-I1-yB0"/>
+                                <include reference="iBT-gH-9I8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="motivationalImage" destination="x5X-oL-gGq" id="eHg-jb-rEt"/>
+                        <outlet property="motivationalQuote" destination="Rnn-HO-bGZ" id="fef-qR-pAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="colorfulTree" width="200" height="200"/>
+    </resources>
+</document>
