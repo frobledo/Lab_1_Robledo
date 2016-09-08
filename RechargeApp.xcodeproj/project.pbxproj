@@ -38,7 +38,7 @@
 		803C443A1D7F6E7E00E54E5F = {
 			isa = PBXGroup;
 			children = (
-				803C44451D7F6E7F00E54E5F /* Lab_1_Robledo */,
+				803C44451D7F6E7F00E54E5F /* RechargeApp */,
 				803C44441D7F6E7F00E54E5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		803C44451D7F6E7F00E54E5F /* Lab_1_Robledo */ = {
+		803C44451D7F6E7F00E54E5F /* RechargeApp */ = {
 			isa = PBXGroup;
 			children = (
 				803C44461D7F6E7F00E54E5F /* AppDelegate.swift */,
@@ -61,6 +61,7 @@
 				803C444F1D7F6E7F00E54E5F /* LaunchScreen.storyboard */,
 				803C44521D7F6E7F00E54E5F /* Info.plist */,
 			);
+			name = RechargeApp;
 			path = Lab_1_Robledo;
 			sourceTree = "<group>";
 		};
