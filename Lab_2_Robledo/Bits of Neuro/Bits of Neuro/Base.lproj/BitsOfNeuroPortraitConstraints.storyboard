@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bits_of_Neuro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BITS OF NEURO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIO-7n-yYN">
+                                <rect key="frame" x="190" y="20" width="222" height="43"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="neuron" translatesAutoresizingMaskIntoConstraints="NO" id="s7u-iO-2Sh">
+                                <rect key="frame" x="150" y="95" width="300" height="412"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="50" y="66" width="300" height="241"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="250" y="66" width="300" height="241"/>
+                                </variation>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="tGe-TA-TWJ">
+                                <rect key="frame" x="236" y="507" width="129" height="31"/>
+                                <color key="backgroundColor" red="0.96503716707229614" green="0.9699060320854187" blue="0.87704676389694214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2z4-Wv-hEj"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Sensory"/>
+                                    <segment title="Motor"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeNeuronType:" destination="BYZ-38-t0r" eventType="valueChanged" id="KqQ-EG-twd"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N0U-Pd-6mg">
+                                <rect key="frame" x="50" y="538" width="500" height="30"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="5" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="JX8-A1-mGu">
+                                        <rect key="frame" x="-2" y="0.0" width="494" height="31"/>
+                                        <connections>
+                                            <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="xLT-FF-C57"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VC-EA-6zB">
+                                        <rect key="frame" x="500" y="3" width="0.0" height="25"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JX8-A1-mGu" firstAttribute="leading" secondItem="N0U-Pd-6mg" secondAttribute="leading" constant="10" id="CAE-xj-WFp"/>
+                                    <constraint firstAttribute="height" constant="30" id="V01-Iv-zRr"/>
+                                    <constraint firstItem="7VC-EA-6zB" firstAttribute="leading" secondItem="JX8-A1-mGu" secondAttribute="trailing" constant="10" id="xXz-3r-qV6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CAE-xj-WFp"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CtQ-k8-zyd">
+                                <rect key="frame" x="234" y="569" width="132" height="30"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="had-29-nly">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
+                                        <connections>
+                                            <action selector="capitalizeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="hLa-0M-zQA"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalize" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rf-7N-arN">
+                                        <rect key="frame" x="59" y="3" width="73" height="24"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9WR-kv-8DR"/>
+                                    <constraint firstItem="0rf-7N-arN" firstAttribute="top" secondItem="CtQ-k8-zyd" secondAttribute="top" constant="3" id="Uoe-WZ-div"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94p-dq-tNl">
+                                <rect key="frame" x="245" y="65" width="110" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.97811740636825562" green="0.029119916260242462" blue="0.69402939081192017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="145" y="65" width="110" height="0.0"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="345" y="65" width="110" height="0.0"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75583499670028687" green="0.74581950902938843" blue="0.94125282764434814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CtQ-k8-zyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Od-gL-Re9"/>
+                            <constraint firstItem="94p-dq-tNl" firstAttribute="top" secondItem="wIO-7n-yYN" secondAttribute="bottom" constant="2" id="4IU-YR-jgO"/>
+                            <constraint firstItem="N0U-Pd-6mg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="5M9-Fp-C9I"/>
+                            <constraint firstItem="N0U-Pd-6mg" firstAttribute="centerY" secondItem="tGe-TA-TWJ" secondAttribute="centerY" id="AeO-GR-Oq6"/>
+                            <constraint firstItem="N0U-Pd-6mg" firstAttribute="top" secondItem="tGe-TA-TWJ" secondAttribute="bottom" constant="1" id="BCS-yc-e7Q"/>
+                            <constraint firstItem="tGe-TA-TWJ" firstAttribute="top" secondItem="s7u-iO-2Sh" secondAttribute="bottom" id="DdP-Os-Ut5"/>
+                            <constraint firstItem="tGe-TA-TWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H7F-4A-1BZ"/>
+                            <constraint firstItem="94p-dq-tNl" firstAttribute="centerX" secondItem="wIO-7n-yYN" secondAttribute="centerX" id="HZ8-Y1-yMe"/>
+                            <constraint firstItem="s7u-iO-2Sh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSy-L8-EYb"/>
+                            <constraint firstItem="s7u-iO-2Sh" firstAttribute="centerX" secondItem="94p-dq-tNl" secondAttribute="centerX" id="OpW-rk-5Nw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N0U-Pd-6mg" secondAttribute="trailing" constant="30" id="RZg-n1-KW3"/>
+                            <constraint firstItem="N0U-Pd-6mg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9d-Ka-zkT"/>
+                            <constraint firstItem="tGe-TA-TWJ" firstAttribute="centerX" secondItem="s7u-iO-2Sh" secondAttribute="centerX" id="WqD-Yd-cQ1"/>
+                            <constraint firstItem="CtQ-k8-zyd" firstAttribute="top" secondItem="N0U-Pd-6mg" secondAttribute="bottom" constant="1" id="Ydi-4a-LPX"/>
+                            <constraint firstItem="CtQ-k8-zyd" firstAttribute="centerY" secondItem="N0U-Pd-6mg" secondAttribute="centerY" id="fjK-a3-Udg"/>
+                            <constraint firstItem="wIO-7n-yYN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kNN-ty-Kpk"/>
+                            <constraint firstItem="94p-dq-tNl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ldV-iE-euj"/>
+                            <constraint firstItem="N0U-Pd-6mg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nzK-mE-ixd"/>
+                            <constraint firstItem="wIO-7n-yYN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qcN-Es-Npu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CtQ-k8-zyd" secondAttribute="bottom" constant="1" id="tHa-Wa-DQm"/>
+                            <constraint firstItem="s7u-iO-2Sh" firstAttribute="top" secondItem="94p-dq-tNl" secondAttribute="bottom" constant="1" id="u4Q-H5-Ddh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OpW-rk-5Nw"/>
+                                <exclude reference="HZ8-Y1-yMe"/>
+                                <exclude reference="AeO-GR-Oq6"/>
+                                <exclude reference="U9d-Ka-zkT"/>
+                                <exclude reference="WqD-Yd-cQ1"/>
+                                <exclude reference="fjK-a3-Udg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="capitalSwitch" destination="had-29-nly" id="Gm8-65-QSw"/>
+                        <outlet property="neuronImage" destination="s7u-iO-2Sh" id="FQz-QI-hFb"/>
+                        <outlet property="neuronTypeControl" destination="tGe-TA-TWJ" id="Rsc-i8-bda"/>
+                        <outlet property="sizeOfFont" destination="7VC-EA-6zB" id="w7K-7U-jrH"/>
+                        <outlet property="typeOfCellLabel" destination="94p-dq-tNl" id="QJc-g6-0fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="neuron" width="300" height="300"/>
+    </resources>
+</document>

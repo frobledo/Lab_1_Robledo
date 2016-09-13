@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1_Robledo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RechargeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -37,9 +37,9 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="lastBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HPf-3p-XOz">
-                                <rect key="frame" x="130" y="343" width="221" height="294"/>
+                                <rect key="frame" x="130" y="343" width="221" height="194"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Bi-6t-LIW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Bi-6t-LIW">
                                         <rect key="frame" x="1" y="0.0" width="56" height="32"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -57,7 +57,7 @@
                                             <action selector="breatheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyK-qt-pRu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03u-cy-6nw">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03u-cy-6nw">
                                         <rect key="frame" x="67" y="0.0" width="40" height="32"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -75,7 +75,7 @@
                                             <action selector="relaxButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNP-Lq-oTW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjd-H1-8pa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjd-H1-8pa">
                                         <rect key="frame" x="117" y="0.0" width="48" height="32"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -93,7 +93,7 @@
                                             <action selector="affirmButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eii-eT-VOs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyJ-jq-8w6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyJ-jq-8w6">
                                         <rect key="frame" x="175" y="0.0" width="47" height="32"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
