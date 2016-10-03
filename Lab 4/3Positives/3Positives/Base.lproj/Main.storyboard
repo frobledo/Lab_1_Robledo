@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_Positives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Positives From Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOH-wH-QFL">
+                                <rect key="frame" x="177" y="30" width="246" height="34"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goQ-ad-Epd">
+                                <rect key="frame" x="70" y="74" width="460" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTT-Ez-y6x">
+                                <rect key="frame" x="70" y="84" width="460" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3g-uk-NC8">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0gb-51-obE"/>
+                                    <barButtonItem title="Add" id="UhN-QT-EjE">
+                                        <connections>
+                                            <segue destination="ORr-Ma-0gH" kind="presentation" identifier="positiveList" modalTransitionStyle="flipHorizontal" id="lOR-cx-yni"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-Xv-1Sq">
+                                <rect key="frame" x="70" y="94" width="460" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-uI-PCt">
+                                <rect key="frame" x="250" y="446" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="Goy-vg-ImZ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="HeM-Kb-Ab1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96159247779692292" green="1" blue="0.76365525930432965" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J0E-Xv-1Sq" firstAttribute="top" secondItem="aTT-Ez-y6x" secondAttribute="bottom" constant="10" id="1T5-cB-hwA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J0E-Xv-1Sq" secondAttribute="trailing" constant="50" id="6OA-ae-0gI"/>
+                            <constraint firstItem="S3g-uk-NC8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="6ZX-cJ-rXQ"/>
+                            <constraint firstItem="aTT-Ez-y6x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="74u-C1-Kuy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="goQ-ad-Epd" secondAttribute="trailing" constant="50" id="DKi-bM-2WM"/>
+                            <constraint firstItem="aTT-Ez-y6x" firstAttribute="top" secondItem="goQ-ad-Epd" secondAttribute="bottom" constant="10" id="JIp-5G-coE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S3g-uk-NC8" secondAttribute="bottom" id="KY4-zG-VMh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S3g-uk-NC8" secondAttribute="trailing" constant="-20" id="LLS-fd-Wz8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aTT-Ez-y6x" secondAttribute="trailing" constant="50" id="Mih-Ie-6KG"/>
+                            <constraint firstItem="goQ-ad-Epd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="NhB-Ym-G84"/>
+                            <constraint firstItem="XOH-wH-QFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SCS-P4-hzf"/>
+                            <constraint firstItem="goQ-ad-Epd" firstAttribute="top" secondItem="XOH-wH-QFL" secondAttribute="bottom" constant="10" id="djP-iB-do8"/>
+                            <constraint firstItem="J0E-Xv-1Sq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="fju-h3-yV2"/>
+                            <constraint firstItem="Vjc-uI-PCt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inW-TH-3ci"/>
+                            <constraint firstItem="S3g-uk-NC8" firstAttribute="top" secondItem="Vjc-uI-PCt" secondAttribute="bottom" constant="10" id="kjA-sx-afF"/>
+                            <constraint firstItem="XOH-wH-QFL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="p6d-NJ-qvC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onePositive" destination="goQ-ad-Epd" id="7Oc-iJ-2bT"/>
+                        <outlet property="threePositive" destination="J0E-Xv-1Sq" id="IRO-QP-2iS"/>
+                        <outlet property="twoPositive" destination="aTT-Ez-y6x" id="SuJ-I5-Gle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="313"/>
+        </scene>
+        <!--Scene2 View Controller-->
+        <scene sceneID="0nO-bO-UEW">
+            <objects>
+                <viewController id="ORr-Ma-0gH" customClass="Scene2ViewController" customModule="_Positives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Sj-54-NjG"/>
+                        <viewControllerLayoutGuide type="bottom" id="fBy-bn-eOK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54T-fJ-DlC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMN-yd-pAi">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YAD-ci-hr4"/>
+                                    <barButtonItem title="Done" id="Sgb-Yh-uOS">
+                                        <connections>
+                                            <segue destination="iqg-xC-ymJ" kind="unwind" identifier="doneList" unwindAction="unwindSegue:" id="NEu-aV-mOc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Positivity List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeu-Cy-NIB">
+                                <rect key="frame" x="227" y="30" width="147" height="34"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter positivity " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4P-qu-IT2">
+                                <rect key="frame" x="30" y="74" width="540" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter positivity " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvF-IR-cNe">
+                                <rect key="frame" x="30" y="154" width="540" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter positivity " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nET-kR-wBF">
+                                <rect key="frame" x="30" y="114" width="540" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leafIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rBC-za-k8r">
+                                <rect key="frame" x="250" y="446" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Z3x-Bd-T5w"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="hDP-hm-GJM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96159247780000001" green="1" blue="0.7636552593" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r4P-qu-IT2" firstAttribute="leading" secondItem="54T-fJ-DlC" secondAttribute="leadingMargin" constant="10" id="0rj-0s-QBj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wvF-IR-cNe" secondAttribute="trailing" constant="10" id="1Wd-1g-MsK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZMN-yd-pAi" secondAttribute="trailing" constant="-20" id="89n-bB-HbS"/>
+                            <constraint firstItem="nET-kR-wBF" firstAttribute="top" secondItem="r4P-qu-IT2" secondAttribute="bottom" constant="10" id="8Tx-vh-dNS"/>
+                            <constraint firstItem="jeu-Cy-NIB" firstAttribute="centerX" secondItem="54T-fJ-DlC" secondAttribute="centerX" id="8U0-wD-YyJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nET-kR-wBF" secondAttribute="trailing" constant="10" id="E0a-8S-acs"/>
+                            <constraint firstItem="rBC-za-k8r" firstAttribute="centerX" secondItem="54T-fJ-DlC" secondAttribute="centerX" id="FkM-mN-nW0"/>
+                            <constraint firstItem="ZMN-yd-pAi" firstAttribute="leading" secondItem="54T-fJ-DlC" secondAttribute="leadingMargin" constant="-20" id="Kuu-G7-0sP"/>
+                            <constraint firstItem="nET-kR-wBF" firstAttribute="leading" secondItem="54T-fJ-DlC" secondAttribute="leadingMargin" constant="10" id="LfT-0u-3AC"/>
+                            <constraint firstItem="fBy-bn-eOK" firstAttribute="top" secondItem="ZMN-yd-pAi" secondAttribute="bottom" id="MDU-NL-LhN"/>
+                            <constraint firstItem="wvF-IR-cNe" firstAttribute="top" secondItem="nET-kR-wBF" secondAttribute="bottom" constant="10" id="OgW-cK-KTc"/>
+                            <constraint firstItem="ZMN-yd-pAi" firstAttribute="top" secondItem="rBC-za-k8r" secondAttribute="bottom" constant="10" id="VsQ-Eu-vCn"/>
+                            <constraint firstItem="jeu-Cy-NIB" firstAttribute="top" secondItem="0Sj-54-NjG" secondAttribute="bottom" constant="10" id="Z3W-rb-xlW"/>
+                            <constraint firstItem="wvF-IR-cNe" firstAttribute="leading" secondItem="54T-fJ-DlC" secondAttribute="leadingMargin" constant="10" id="b9V-gy-FKz"/>
+                            <constraint firstItem="r4P-qu-IT2" firstAttribute="top" secondItem="jeu-Cy-NIB" secondAttribute="bottom" constant="10" id="eYz-vz-Rek"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r4P-qu-IT2" secondAttribute="trailing" constant="10" id="mU6-Am-IPt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userOnePositive" destination="r4P-qu-IT2" id="NBp-or-2I5"/>
+                        <outlet property="userThreePositive" destination="wvF-IR-cNe" id="QyK-1h-swS"/>
+                        <outlet property="userTwoPositive" destination="nET-kR-wBF" id="qpC-hy-eHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyk-T3-dB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iqg-xC-ymJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="leafIcon" width="200" height="200"/>
+        <image name="sunIcon" width="200" height="200"/>
+    </resources>
+</document>
