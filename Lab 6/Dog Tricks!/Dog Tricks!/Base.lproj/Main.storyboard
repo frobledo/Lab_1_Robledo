@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_Tricks_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="cop-Xk-DEu">
+                                <rect key="frame" x="155" y="112" width="300" height="300"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6P9-8V-zeC" appends="YES" id="zLz-kS-xab"/>
+                                    <outletCollection property="gestureRecognizers" destination="2FM-SY-bx1" appends="YES" id="q9m-Lj-7OV"/>
+                                    <outletCollection property="gestureRecognizers" destination="kXn-aU-He2" appends="YES" id="SB1-U5-bDM"/>
+                                    <outletCollection property="gestureRecognizers" destination="jC8-p6-h37" appends="YES" id="5Pj-Nd-gK6"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71286914364207354" green="0.81617505822710101" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6P9-8V-zeC">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="zaj-v2-kQ0"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="cu5-ah-ffy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="2FM-SY-bx1">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="Bx6-Fn-9et"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="wcd-9f-db9"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="kXn-aU-He2">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="0u6-mb-Zsh"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="1NE-zk-jqZ"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="jC8-p6-h37">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="Qil-mV-cWX"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ogl-q9-5NV"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main" width="300" height="300"/>
+    </resources>
+</document>
