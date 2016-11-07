@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Harry Potter</string>
+
+    <string name="buttonName">Aparecium</string>
+
+    <string name="houseField">My house is: </string>
+
+    <string name="name">Name</string>
+
+    <string-array name="house">
+        <item>Gryffindor</item>
+        <item>Hufflepuff</item>
+        <item>Ravenclaw</item>
+        <item>Slytherin</item>
+    </string-array>
+
+
+    <string name="pet">My pet is a/an: </string>
+    <string name="pet1_radio">Rat</string>
+    <string name="pet2_radio">Owl</string>
+    <string name="pet3_radio">Pygmy Puff</string>
+
+    <string name="favorite_class">My favorite classes are: </string>
+    <string name="class1">Potions</string>
+    <string name="class2">Herbology</string>
+    <string name="class3">Transfiguration</string>
+    <string name="class4">Defense</string>
+
+    <string name="quidditch"> Play Quidditch</string>
+
+</resources>
