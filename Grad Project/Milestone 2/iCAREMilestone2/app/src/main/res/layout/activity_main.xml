@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.programmingpenguin.icaremilestone2.MainActivity">
+
+    <Button
+        android:text="@string/green_button"
+        android:textSize="20sp"
+        android:background="@color/green"
+        android:id="@+id/greenButton"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginBottom="24dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:text="@string/red_button"
+        android:textSize="20sp"
+        android:background="@color/red"
+        android:layout_width="150dp"
+        android:id="@+id/redButton"
+        style="@style/Widget.AppCompat.Button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:hint="@string/message_label"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textAlignment="textStart"
+        android:layout_width="305dp"
+        android:layout_height="104dp"
+        android:id="@+id/textView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:layout_width="250dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/get_message"
+        android:textSize="20sp"
+        android:background="@color/purple"
+        android:layout_marginTop="48dp"
+        android:layout_height="50dp"
+        android:id="@+id/button" />
+
+</android.support.constraint.ConstraintLayout>
