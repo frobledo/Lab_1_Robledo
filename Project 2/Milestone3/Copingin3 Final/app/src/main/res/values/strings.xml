@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Coping in 3</string>
+
+    <string name="cope_button">COPE</string>
+
+    <string name="current_feeling">I am feeling:</string>
+    <string-array name="list_current_feeling">
+        <item>Angry</item>
+        <item>Scared</item>
+        <item>Sad</item>
+        <item>Nervous</item>
+        <item>Tired</item>
+    </string-array>
+
+
+
+    <string name="activities">I enjoy:</string>
+    <string name="randomness">Randomness</string>
+    <string name="exercising">Exercising</string>
+    <string name="writing">Writing</string>
+    <string name="yoga">Yoga</string>
+
+    <string name="done">DONE</string>
+
+    <string name="description">Spend 1 minute per coping strategy!</string>
+
+    <string name="time">0:00</string>
+
+</resources>
