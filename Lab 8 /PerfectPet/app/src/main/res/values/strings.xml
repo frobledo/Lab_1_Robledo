@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PerfectPet</string>
+
+    <string name="title">Which dog is your perfect match?</string>
+
+    <string name="type">Choose your type:</string>
+
+    <string-array name="type_person">
+        <item>Athletic</item>
+        <item>Couch Potato</item>
+        <item>Beach Bum</item>
+        <item>Hipster</item>
+    </string-array>
+
+    <string name="search">Find my match!</string>
+
+</resources>
