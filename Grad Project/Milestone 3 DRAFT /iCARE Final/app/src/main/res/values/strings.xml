@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">iCARE</string>
+
+    <string name="message_label">Message</string>
+    <string name="get_message">Are you OK?</string>
+
+
+</resources>
