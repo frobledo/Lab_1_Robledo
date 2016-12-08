@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ice Cream Final Robledo</string>
+
+    <string name="ice_cream_label">I Scream for Ice Cream</string>
+    <string name="hint">Enter dessert</string>
+    <string name="dairy_switch">Dairy-free</string>
+
+    <string-array name="type_icecream">
+        <item>salted caramel</item>
+        <item>death by chocolate</item>
+        <item>cookies and cream</item>
+    </string-array>
+
+    <string name="toggle_on">CUP</string>
+    <string name="toggle_off">CONE</string>
+
+    <string name="radioGroup1">ice cream</string>
+    <string name="radioGroup2">frozen yogurt</string>
+    <string name="radioGroup3">gelato</string>
+
+    <string name="checkBox1">sprinkles</string>
+    <string name="checkBox2">hot fudge</string>
+    <string name="checkBox3">nuts</string>
+
+    <string name="button">TREAT ME</string>
+
+    <string name="button2">FIND TREAT</string>
+</resources>
