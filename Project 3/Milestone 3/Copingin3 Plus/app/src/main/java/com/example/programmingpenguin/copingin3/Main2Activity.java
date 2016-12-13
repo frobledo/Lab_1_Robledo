@@ -28,7 +28,7 @@ public class Main2Activity extends AppCompatActivity {
     private int [] userDeck = new int[20];
     private String feelingValue = "";
     private int count = 0;
-    private int interval = 5000;
+    private int interval = 60000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +81,7 @@ public class Main2Activity extends AppCompatActivity {
         });
 
         final TextView timer =(TextView)findViewById(R.id.textView2);
-        new CountDownTimer(20000, 1000) {
+        new CountDownTimer(180000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 timer.setText("Time remaining: " +(millisUntilFinished/1000) + " seconds!");
