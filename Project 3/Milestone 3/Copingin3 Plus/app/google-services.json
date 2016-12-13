@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "857219068282",
+    "firebase_url": "https://copingin3-plus.firebaseio.com",
+    "project_id": "copingin3-plus",
+    "storage_bucket": "copingin3-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857219068282:android:ac3cf6c17f28ccd3",
+        "android_client_info": {
+          "package_name": "com.example.programmingpenguin.copingin3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857219068282-d3u3b4r2tcnasb40jd1ddvv1mb0p6s17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.programmingpenguin.copingin3",
+            "certificate_hash": "D4AC8699F269A26BF4DAEE3D60C6800336DA8521"
+          }
+        },
+        {
+          "client_id": "857219068282-caf42u7b9jj8sdb79hopg20oe3327f2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhYkzNACkJuKXSiLGRv0o9RArjZLCRzqE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857219068282-caf42u7b9jj8sdb79hopg20oe3327f2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
