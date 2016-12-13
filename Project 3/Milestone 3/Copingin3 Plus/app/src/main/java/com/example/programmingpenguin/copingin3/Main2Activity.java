@@ -16,7 +16,9 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 
+import java.text.DecimalFormat;
 import java.text.Format;
+import java.text.NumberFormat;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Handler;
@@ -84,7 +86,10 @@ public class Main2Activity extends AppCompatActivity {
         new CountDownTimer(180000, 1000) {
 
             public void onTick(long millisUntilFinished) {
-                timer.setText("Time remaining: " +(millisUntilFinished/1000) + " seconds!");
+                int seconds = (int) (millisUntilFinished/1000) % 60;
+                int minutes = (int) (millisUntilFinished/1000) / 60;
+                NumberFormat f = new DecimalFormat("00");
+                timer.setText("Time remaining: " + minutes + ":" + f.format(seconds));
             }
 
             public void onFinish() {
@@ -142,7 +147,6 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public ImageView determineImages(int coping, ImageView image){
-
 
         switch(coping){
             case 1:
